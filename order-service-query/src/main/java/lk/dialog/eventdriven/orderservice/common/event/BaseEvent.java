@@ -1,7 +1,7 @@
 package lk.dialog.eventdriven.orderservice.common.event;
 
 /**
- * @author AJ Catambay
+ * @author shehan
  **/
 public class BaseEvent<T> {
 

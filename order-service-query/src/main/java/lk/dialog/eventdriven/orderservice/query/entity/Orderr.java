@@ -10,12 +10,9 @@ public class Orderr implements Serializable {
     //@Id
     private String id;
 
-//    private String orderId;
-
     private String name;
 
     private String status;
-   // private int quantity;
 
 
     public String getId() {
@@ -25,14 +22,6 @@ public class Orderr implements Serializable {
     public void setId(String id) {
         this.id = id;
     }
-
-//    public String getOrderId() {
-//        return orderId;
-//    }
-//
-//    public void setOrderId(String orderId) {
-//        this.orderId = orderId;
-//    }
 
     public String getName() {
         return name;
@@ -50,11 +39,4 @@ public class Orderr implements Serializable {
         this.status = status;
     }
 
-//    public int getQuantity() {
-//        return quantity;
-//    }
-//
-//    public void setQuantity(int quantity) {
-//        this.quantity = quantity;
-//    }
 }
