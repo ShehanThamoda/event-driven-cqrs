@@ -20,8 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class OrderController {
 
-    private final ApplicationEventPublisher applicationEventPublisher;
-
     @Autowired
     private OrderCommandService orderCommandService;
 
@@ -29,7 +27,7 @@ public class OrderController {
     public ResponseEntity<String> placeOrder(@RequestBody AuditDto auditDto) {
            log.info("Called create order controller.OrderDto:{}", auditDto.toString());
            try{
-               applicationEventPublisher.publishEvent(auditDto);
+               orderCommandService.createOrder(auditDto);
                return new ResponseEntity<>("Success", org.springframework.http.HttpStatus.CREATED);
            }catch (Exception e){
                return new ResponseEntity<>("An error occurred", HttpStatus.INTERNAL_SERVER_ERROR);

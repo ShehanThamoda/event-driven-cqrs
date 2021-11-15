@@ -40,7 +40,7 @@ public class OrderAggregate {
         this.orderId = orderCreatedEvent.getId();
         this.name = orderCreatedEvent.getName();
         this.status = "CREATED";
-        //AggregateLifecycle.apply(new NotificationSentEvent(this.orderId, "ORDER_COMPLETED"));
+        AggregateLifecycle.apply(new NotificationSentEvent(this.orderId, "ORDER_COMPLETED"));
     }
 
     @EventSourcingHandler
