@@ -6,7 +6,6 @@ import lk.dialog.eventdriven.orderservice.command.service.OrderCommandService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -38,7 +37,6 @@ public class OrderController {
     public String updateOrder(@RequestBody OrderUpdateDto orderDto) {
         log.info("Called update order controller:{}"+ orderDto.toString());
         orderCommandService.updateOrder(orderDto);
-        //streamBridge.send("inventoryEventSupplier-out-0", MessageBuilder.withPayload(orderDto.getName()).build());
         return "Order Update Successfully";
     }
 

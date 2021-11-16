@@ -73,13 +73,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.axonframework.extensions.mongo/axon-mongo -->
         <dependency>
             <groupId>org.axonframework.extensions.mongo</groupId>
             <artifactId>axon-mongo</artifactId>
             <version>4.2</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream -->
         <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
@@ -91,31 +89,6 @@
             <version>1.18.16</version>
             <scope>provided</scope>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>lk.dialog.broker</groupId>-->
-<!--            <artifactId>event-adapter</artifactId>-->
-<!--            <version>1.0.0</version>-->
-<!--        </dependency>-->
-<!--&lt;!&ndash;            <exclusions>&ndash;&gt;-->
-<!--&lt;!&ndash;                <exclusion>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <groupId>org.projectlombok</groupId>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <artifactId>lombok</artifactId>&ndash;&gt;-->
-<!--&lt;!&ndash;                </exclusion>&ndash;&gt;-->
-<!--&lt;!&ndash;                <exclusion>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <groupId>org.apache.commons</groupId>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <artifactId>commons-lang3</artifactId>&ndash;&gt;-->
-<!--&lt;!&ndash;                </exclusion>&ndash;&gt;-->
-<!--&lt;!&ndash;                <exclusion>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <groupId>com.fasterxml.jackson.core</groupId>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <artifactId>jackson-databind</artifactId>&ndash;&gt;-->
-<!--&lt;!&ndash;                </exclusion>&ndash;&gt;-->
-<!--&lt;!&ndash;            </exclusions>&ndash;&gt;-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.amazonaws</groupId>-->
-<!--            <artifactId>aws-java-sdk</artifactId>-->
-<!--            <version>1.11.290</version>-->
-<!--        </dependency>-->
     </dependencies>
 <!--    <dependencyManagement>-->
 <!--        <dependencies>-->
